@@ -8,14 +8,31 @@
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
 </head>
 <body>
     <section>
         <div class="container">
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
-            <input type="checkbox" name="" id="">
+            <div class="wrapper">
+                <form action="#">
+                    <h2>Checkbox</h2>
+                    <input class="custom_checkbox" type="checkbox" checked name="" id="checkbox1">
+                    <label for="checkbox1">Checkbox 1</label>
+                    <input class="custom_checkbox" type="checkbox" name="" id="checkbox2">
+                    <label for="checkbox2">Checkbox 2</label>
+                    <input class="custom_checkbox" type="checkbox" name="" id="checkbox3">
+                    <label for="checkbox3">Checkbox 3</label>
+                    <h2>Radiobutton</h2>
+                    <input class="custom_radiobutton" checked type="radio" name="radiobutton" id="radiobutton1">
+                    <label for="radiobutton1">Radiobutton 1</label>
+                    <input class="custom_radiobutton" type="radio" name="radiobutton" id="radiobutton2">
+                    <label for="radiobutton2">Radiobutton 2</label>
+                    <input class="custom_radiobutton" type="radio" name="radiobutton" id="radiobutton3">
+                    <label for="radiobutton3">Radiobutton 3</label>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
     </section>
 </body>

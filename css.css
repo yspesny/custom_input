@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+.wrapper{
+    margin: 50px;
+}
+.custom_checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom_checkbox+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    user-select: none;
+}
+.custom_checkbox+label::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 10em;
+    border: 1px solid #DBDBDB;
+    margin-right: 5px;
+    background: white;
+}
+.custom_checkbox:checked+label::before{
+    border-color: rgb(16, 180, 16);
+    box-shadow: 0px 0px 1px 0px rgb(16, 180, 16);
+}
+.custom_checkbox:checked+label::after{
+    transition: all 1s ease 0s;
+    content: '';
+    height: 12px;
+    width: 12px;
+    border-radius: 10em;
+    background-color: rgb(16, 180, 16);
+    position: absolute;
+    margin-left: 5px;
+}
+h2{
+    margin-bottom: 5px;
+}
+.custom_radiobutton{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom_radiobutton+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    user-select: none;
+}
+.custom_radiobutton+label::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border: 1px solid #DBDBDB;
+    border-radius: 10em;
+    margin-right: 5px;
+    background: white;
+}
+.custom_radiobutton:checked+label::before{
+    border-color: rgb(16, 180, 16);
+    box-shadow: 0px 0px 1px 0px rgb(16, 180, 16);
+}
+.custom_radiobutton:checked+label::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: rgb(16, 180, 16);
+    border-radius: 10em;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.button{
+    background: rgb(16, 180, 16);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    transition: 0.2s;
+}
+.button:hover{
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 0px rgb(16, 180, 16);
+}
